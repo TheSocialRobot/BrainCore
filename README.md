@@ -8,6 +8,12 @@ https://grpc.io/docs/protoc-installation/
 
 ```bash
 wget https://github.com/protocolbuffers/protobuf/releases/download/v21.5/protoc-21.5-linux-x86_64.zip
+
+# unpack the zip file and move the protoc command to a convenient directory in your path
+mkdir tmp-protoc ;  cd tmp-protoc
+unzip protoc-21.5-linux-x86_64.zip
+mv bin/proto ~/.local/bin
+cd .. ; rm -rf tmp-protoc
 ```
 
 ```bash
